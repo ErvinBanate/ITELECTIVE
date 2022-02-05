@@ -83,8 +83,8 @@ app.post('/login', (req, res) => {
             res.send('Admin');
             return;
         }
-        else if (result.user_type == 'Customer') {
-            res.end('Customer');
+        else if (result.user_type == 'Cashier') {
+            res.send('Customer');
             return;
         }       
     });
