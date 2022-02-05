@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(window).on("load", () => {
         $.ajax({
-            url: 'http://Localhost:8080/Cashier/Orders',
+            url: 'http://Localhost:8080/Customer/Orders',
             method: 'GET',
             dataType: 'html'
         }).done((data) => {
@@ -16,7 +16,7 @@ $(document).ready(function() {
         const orderKey = $('#orderKey').val();
         const orderVal = $('#orderVal').val();
         $.ajax({
-            url: 'http://Localhost:8080/Cashier/Add-Order',
+            url: 'http://Localhost:8080/Customer/Add-Order',
             method: 'POST',
             data: {key: orderKey, quantity: orderVal},
             dataType: 'text'
@@ -26,7 +26,7 @@ $(document).ready(function() {
             }
             else if (data == 'Order-Added') {
                 $.ajax({
-                    url: 'http://Localhost:8080/Cashier/Orders',
+                    url: 'http://Localhost:8080/Customer/Orders',
                     method: 'GET',
                     dataType: 'html'
                 }).done((data) => {
@@ -47,14 +47,14 @@ $(document).ready(function() {
         const name = $(this).closest('tr').find('.name').html();
         // console.log(name);
         $.ajax({
-            url: 'http://Localhost:8080/Cashier/Delete',
+            url: 'http://Localhost:8080/Customer/Delete',
             method: 'POST',
             data: {key: name},
             dataType: 'text'
         }).done((data) => {
             if (data == 'Order-Deleted') {
                 $.ajax({
-                    url: 'http://Localhost:8080/Cashier/Orders',
+                    url: 'http://Localhost:8080/Customer/Orders',
                     method: 'GET',
                     dataType: 'html'
                 }).done((data) => {
@@ -74,7 +74,7 @@ $(document).ready(function() {
     $('#resetOrders').click(() => {
         const total = $('#Total').val();
         $.ajax({
-            url: 'http://Localhost:8080/Cashier/Reset-Orders',
+            url: 'http://Localhost:8080/Customer/Reset-Orders',
             method: 'POST',
             data: { price: total },
             dataType: 'text'
@@ -88,7 +88,7 @@ $(document).ready(function() {
             }
         });
         $.ajax({
-            url: 'http://Localhost:8080/Cashier/Orders',
+            url: 'http://Localhost:8080/Customer/Orders',
             method: 'GET',
             dataType: 'html'
         }).done((data) => {

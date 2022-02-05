@@ -61,8 +61,8 @@ app.get('/Choices', (req, res) => {
     });
 });
 
-app.get('/Cashier', (req, res) => {
-    res.sendFile('Cashier.html', {root: path.join(__dirname + '/HTML')});
+app.get('/Customer', (req, res) => {
+    res.sendFile('Customer.html', {root: path.join(__dirname + '/HTML')});
 });
 
 app.post('/login', (req, res) => {
@@ -83,8 +83,8 @@ app.post('/login', (req, res) => {
             res.send('Admin');
             return;
         }
-        else if (result.user_type == 'Cashier') {
-            res.end('Cashier');
+        else if (result.user_type == 'Customer') {
+            res.end('Customer');
             return;
         }       
     });
@@ -233,7 +233,7 @@ app.post('/Admin/Remove-Product/Remove', (req, res) => {
     });
 });
 
-app.post('/Cashier/Reset-Orders', (req, res) => {
+app.post('/Customer/Reset-Orders', (req, res) => {
     database.all('SELECT * FROM Orders', (err, result) => {
         if (err) {
             throw err;
@@ -270,7 +270,7 @@ app.post('/Cashier/Reset-Orders', (req, res) => {
     });
 });
 
-app.get('/Cashier/Orders', (req, res) => {
+app.get('/Customer/Orders', (req, res) => {
     let orders = '';
 
     database.all('SELECT * FROM Orders', (err, result) => {
@@ -289,7 +289,7 @@ app.get('/Cashier/Orders', (req, res) => {
     });
 });
 
-app.post('/Cashier/Add-Order', (req, res) => {
+app.post('/Customer/Add-Order', (req, res) => {
     const name = req.body.key;
     const quantity = req.body.quantity;
     let stockPrice;
@@ -338,7 +338,7 @@ app.post('/Cashier/Add-Order', (req, res) => {
     });
 });
 
-app.post('/Cashier/Delete', (req, res) => {
+app.post('/Customer/Delete', (req, res) => {
     const name = req.body.key;
 
     database.get('SELECT * FROM Orders WHERE product_name = ?', [name], (err, result) =>{
