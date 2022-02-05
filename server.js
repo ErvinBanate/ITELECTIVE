@@ -30,6 +30,11 @@ app.get('/Admin/Remove-Product', (req, res) => {
     res.sendFile('Remove-product.html', {root: path.join(__dirname + '/HTML')});
 });
 
+app.get('/User/Add-Customer', (req, res) => {
+    res.sendFile('Sign-up.html', {root: path.join(__dirname + '/HTML')});
+});
+
+
 app.get('/Display', (req, res) => {
     let stocks = '';
     // let loop = 0;
@@ -83,7 +88,7 @@ app.post('/login', (req, res) => {
             res.send('Admin');
             return;
         }
-        else if (result.user_type == 'Cashier') {
+        else if (result.user_type == 'Customer') {
             res.send('Customer');
             return;
         }       
@@ -360,5 +365,15 @@ app.post('/Customer/Delete', (req, res) => {
         }
     });
 });
+
+app.post('User/Add-Customer', (req, res)=>{
+    database.run('INSERT INTO Users (username, password, user_type) VALUES(?,?,?)', [user, pass, utype], (err) => {
+        if (err) {
+            throw err;
+        }
+        res.send('New');
+        return;
+    });
+})
 
 app.listen(8080, () => console.log("You are Now Connected in 8080"));
