@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://Localhost:8080/Navigation.css">
+        <link rel="stylesheet" href="http://Localhost:8080/Earnings.css">
+    </head>
+
+    <body>
+        <div class="Heading">
+            <h2>Admin</h2>
+        </div>    
+
+        <ul class="Navigate">
+            <li>
+                <a href="http://Localhost:8080/Admin/Add-product">Add Product</a>
+            </li>
+            <li>
+                <a href="http://Localhost:8080/Admin/Remove-product">Remove Product</a>
+            </li>
+            <li>
+                <a class="now">Earnings</a>
+            </li>
+            <li>
+                <a href="http://Localhost:8080">Sign Out</a>
+            </li>
+        </ul>
+
+        <div id="displayEarnings">
+            <h2>Earnings</h2>
+            <div id="date">
+                <input type="date" id="dayEarnings">
+                <button>Submit</button>
+            </div>
+            <table id="info">
+                <tbody id="earned"></tbody>
+            </table>
+        </div>
+    </body>
+</html>
