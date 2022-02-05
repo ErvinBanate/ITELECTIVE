@@ -13,9 +13,12 @@ app.use(express.static('Bootstrap/JS'));
 app.use(express.static('JS'));
 app.use(express.static('CSS'));
 app.use(express.static('JQuery Ajax'));
+app.use(express.static('img'));
+app.use(express.static('fonts'));
+
 
 app.get('/', (req, res) => {
-    res.sendFile('Sign-In.html', {root: path.join(__dirname + '/HTML')});
+    res.sendFile('Homepage.html', {root: path.join(__dirname + '/HTML')});
 });
 
 app.get('/Admin', (req, res) => {
