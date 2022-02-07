@@ -15,6 +15,8 @@ app.use(express.static('CSS'));
 app.use(express.static('JQuery Ajax'));
 app.use(express.static('img'));
 app.use(express.static('fonts'));
+app.use(express.static('lib'));
+
 
 
 app.get('/', (req, res) => {
