@@ -75,6 +75,31 @@ app.get('/Customer', (req, res) => {
     res.sendFile('Customer.html', {root: path.join(__dirname + '/HTML')});
 });
 
+app.post('/Sign-In', (req, res) => {
+    const username = req.body.user;
+    const password = req.body.pass;
+    const customer = 'Customer';
+
+    database.get('SELECT * FROM Users WHERE username = ? AND user_type = ?', [username, customer], (err, result) => {
+        if (err) {
+            throw err;
+        }
+        else {
+            if (result == undefined) {
+                database.run('INSERT INTO Users (username, password, user_type) VALUES(?,?,?)', [username, password, customer], (err) => {
+                    if (err) {
+                        throw err;
+                    }
+                    res.send('Success');
+                });
+            }
+            else {
+                res.send('Present');
+            }
+        }
+    });
+});
+
 app.post('/login', (req, res) => {
     const username = req.body.user;
     const password = req.body.pass;
