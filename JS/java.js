@@ -1,10 +1,21 @@
-function viewPassword() {
-    var password = document.getElementById("password");
+function viewPasswordLog() {
+    var passwordLog = document.getElementById("passwordLog");
 
-    if (password.type == "password") {
-        password.type = "text";
+    if (passwordLog.type == "password") {
+        passwordLog.type = "text";
     }
     else {
-        password.type = "password";
+        passwordLog.type = "password";
+    } 
+}
+
+function viewPasswordSign() {
+    var passwordSign = document.getElementById("passwordSign");
+
+    if (passwordSign.type == "password") {
+        passwordSign.type = "text";
+    }
+    else {
+        passwordSign.type = "password";
     }
 }
