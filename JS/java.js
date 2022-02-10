@@ -11,7 +11,6 @@ function viewPasswordLog() {
 
 function viewPasswordSign() {
     var passwordSign = document.getElementById("passwordSign");
-
     if (passwordSign.type == "password") {
         passwordSign.type = "text";
     }
