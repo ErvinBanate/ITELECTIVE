@@ -7,7 +7,7 @@ $(document).ready(() => {
         
         if (dataPost.join('').length < 2) {
             $('#errorGroup').show();
-            $('#errorMessage').text("Please Fill-In all the Basic Information Properly to Sign-In");
+            $('#errorMessage').text("Please Fill-In all the Information Properly to Sign-In");
             $('.popupCloseButton').click(() => {
                 $('#errorGroup').hide();
             });
@@ -42,6 +42,39 @@ $(document).ready(() => {
                 $('.popupCloseButton').click(() => {
                     $('#errorGroup').hide();
                 });
+            }
+        });
+    });
+    $('#log').click(() => {
+        const user = $('#usernameLog').val();
+        const pass = $('#passwordLog').val();
+        const dataPost = [user, pass];
+        
+        if (dataPost.join('').length < 2) {
+            $('#errorGroup').show();
+            $('#errorMessage').text("Please Fill-In all the Information Properly to Log-In");
+            $('.popupCloseButton').click(() => {
+                $('#errorGroup').hide();
+            });
+            return;
+        }
+
+        $.ajax({
+            url: 'http://Localhost:8080/Log-In',
+            method: 'POST',
+            data: {user: user, pass: pass},
+            dataType: 'text'
+        }).done((data) => {
+            if (data == 'Not Found') {
+                $('#errorGroup').show();
+                $('#errorMessage').text("The Username or Password in incorrect");
+                $('.popupCloseButton').click(() => {
+                    $('#errorGroup').hide();
+                });
+                return;
+            }
+            else {
+                
             }
         });
     });

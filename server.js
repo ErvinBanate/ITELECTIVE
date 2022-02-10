@@ -80,7 +80,7 @@ app.post('/Sign-In', (req, res) => {
     const password = req.body.pass;
     const customer = 'Customer';
 
-    database.get('SELECT * FROM Users WHERE username = ? AND user_type = ?', [username, customer], (err, result) => {
+    database.get('SELECT * FROM Users WHERE username = ?', [username], (err, result) => {
         if (err) {
             throw err;
         }
@@ -95,6 +95,25 @@ app.post('/Sign-In', (req, res) => {
             }
             else {
                 res.send('Present');
+            }
+        }
+    });
+});
+
+app.post('/Log-In', (req, res) => {
+    const username = req.body.user;
+    const password = req.body.pass;
+
+    database.get('SELECT * FROM Users WHERE username = ? AND password = ?', [username, password], (err, result) => {
+        if (err) {
+            throw err;
+        }
+        else {
+            if (result == undefined) {
+                res.send('Not Found');
+            }
+            else {
+                res.send(result.username);
             }
         }
     });
