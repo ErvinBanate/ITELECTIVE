@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const sqlite = require('sqlite3');
-const database = new sqlite.Database(path.resolve(__dirname, 'Database/Store.db'));
+const database = new sqlite.Database(path.resolve(__dirname, 'Database/GreenerGreen.db'));
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -117,7 +117,7 @@ app.post('/Log-In', (req, res) => {
                 res.send('Not Found');
             }
             else {
-                res.send(result);
+                res.send(result.username);
             }
         }
     });
