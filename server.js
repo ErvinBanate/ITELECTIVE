@@ -23,8 +23,8 @@ app.get('/', (req, res) => {
     res.sendFile('Homepage.html', {root: path.join(__dirname + '/HTML')});
 });
 
-app.get('/Admin', (req, res) => {
-    res.sendFile('Admin.html', {root: path.join(__dirname + '/HTML')});
+app.get('/product-list', (req, res) => {
+    res.sendFile('product-list.html', {root: path.join(__dirname + '/HTML')});
 });
 
 app.get('/Admin/Add-Product', (req, res) => {
