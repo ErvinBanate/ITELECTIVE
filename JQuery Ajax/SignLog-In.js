@@ -1,4 +1,9 @@
 $(document).ready(() => {
+    $(window).on("load", () => {
+        url = location.pathname;
+        var parts = url.substring(1).split('/');
+        $('#username').text(parts[1]);
+    });
     $('#errorGroup').hide();
     $('#sign').click(() => {
         const user = $('#usernameSign').val();
@@ -63,7 +68,7 @@ $(document).ready(() => {
             url: 'http://Localhost:8080/Log-In',
             method: 'POST',
             data: {user: user, pass: pass},
-            dataType: 'text'
+            dataType: 'json'
         }).done((data) => {
             // console.log(data);
             // console.log(data.ID);
@@ -78,10 +83,16 @@ $(document).ready(() => {
                 return;
             }
             else {
-                // sessionStorage.setItem('username', data.username);
-                // sessionStorage.setItem('password', data.password);
+                sessionStorage.setItem('username', data.username);
+                sessionStorage.setItem('password', data.password);
+                // console.log(sessionStorage);
                 window.location.href = `http://Localhost:8080/Customer/${data}`;
             }
         });
+    });
+
+    $('#signOut').click(() => {
+        sessionStorage.clear();
+        window.location.href = 'http://Localhost:8080';
     });
 });
