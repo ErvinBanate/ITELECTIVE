@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const sqlite = require('sqlite3');
-const database = new sqlite.Database(path.resolve(__dirname, 'Database/Store.db'));
+const database = new sqlite.Database(path.resolve(__dirname, 'Database/GreenerGreen.db'));
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -75,6 +75,10 @@ app.get('/Customer', (req, res) => {
     res.sendFile('Customer.html', {root: path.join(__dirname + '/HTML')});
 });
 
+app.get('/Customer/:username', (req, res) => {
+    res.sendFile('Customer.html', {root: path.join(__dirname + '/HTML')});
+});
+
 app.post('/Sign-In', (req, res) => {
     const username = req.body.user;
     const password = req.body.pass;
@@ -86,19 +90,19 @@ app.post('/Sign-In', (req, res) => {
         }
         else {
             if (result == undefined) {
-                database.run('INSERT INTO Users (username, password, user_type) VALUES(?,?,?)', [username, password, customer], (err) => {
+                const response = database.run('INSERT INTO Users (username, password, user_type) VALUES(?,?,?)', [username, password, customer], (err) => {
                     if (err) {
                         throw err;
                     }
-                    res.send('Success');
                 });
+                res.send('Success',response);
             }
             else {
                 res.send('Present');
             }
         }
     });
-});
+}); 
 
 app.post('/Log-In', (req, res) => {
     const username = req.body.user;

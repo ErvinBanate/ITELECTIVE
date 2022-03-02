@@ -65,6 +65,10 @@ $(document).ready(() => {
             data: {user: user, pass: pass},
             dataType: 'text'
         }).done((data) => {
+            // console.log(data);
+            // console.log(data.ID);
+            // console.log(data.username);
+            // console.log(data[2]);
             if (data == 'Not Found') {
                 $('#errorGroup').show();
                 $('#errorMessage').text("The Username or Password in incorrect");
@@ -74,7 +78,9 @@ $(document).ready(() => {
                 return;
             }
             else {
-                
+                // sessionStorage.setItem('username', data.username);
+                // sessionStorage.setItem('password', data.password);
+                window.location.href = `http://Localhost:8080/Customer/${data}`;
             }
         });
     });
