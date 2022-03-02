@@ -15,6 +15,8 @@ app.use(express.static('lib'));
 
 app.get('/', htmlLoader);
 
+app.get('/productlist', htmlLoader);
+
 app.get('/Customer', htmlLoader);
 
 
