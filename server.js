@@ -15,7 +15,15 @@ app.use(express.static('lib'));
 
 app.get('/', htmlLoader);
 
-app.get('/productlist', htmlLoader);
+app.get('/productlist/page1', htmlLoader);
+
+app.get('/productlist/page2', htmlLoader);
+
+app.get('/productlist/page3', htmlLoader);
+
+app.get('/productlist/page4', htmlLoader);
+
+app.get('/productlist/page5', htmlLoader);
 
 app.get('/Customer', htmlLoader);
 
