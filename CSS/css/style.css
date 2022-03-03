@@ -1422,7 +1422,7 @@ h2 {
 .cart-page .cart-page-inner {
     padding: 30px;
     margin-bottom: 30px;
-    background: #ffffff;
+    background:#ffffff;
 }
 
 .cart-page .table {
@@ -1477,7 +1477,7 @@ h2 {
     font-size: 14px;
     text-align: center;
     color: #ffffff;
-    background: #096800;
+    background: #64e368;
     border: none;
     border-radius: 4px;
 }
@@ -1525,7 +1525,7 @@ h2 {
 }
 
 .cart-page .coupon input:focus {
-    border-color: #096800;
+    border-color: #FF6F61;
 }
 
 .cart-page .coupon button {
@@ -1534,15 +1534,15 @@ h2 {
     padding: 2px 0;
     font-size: 16px;
     text-align: center;
-    color: #096800;
+    color: #FF6F61;
     background: #ffffff;
-    border: 1px solid #096800;
+    border: 1px solid #FF6F61;
     border-radius: 4px;
 }
 
 .cart-page .coupon button:hover {
     color: #ffffff;
-    background: #096800;
+    background: #FF6F61;
 }
 
 .cart-page .cart-summary {
@@ -1580,28 +1580,27 @@ h2 {
     padding: 2px 10px;
     text-align: center;
     color: #ffffff;
-    background: #096800;
+    background: #FF6F61;
     border: none;
     border-radius: 4px;
 }
 
 .cart-page .cart-summary .cart-btn button:hover {
-    color: #096800;
+    color: #FF6F61;
     background: #000000;
 }
 
 .cart-page .cart-summary .cart-btn button:first-child {
     margin-right: 25px;
-    color: #096800;
+    color: #FF6F61;
     background: #ffffff;
-    border: 1px solid #096800;
+    border: 1px solid #FF6F61;
 }
 
 .cart-page .cart-summary .cart-btn button:first-child:hover {
     color: #ffffff;
-    background: #096800;
+    background: #FF6F61;
 }
-
 
 /**********************************/
 /********** Wishlist CSS **********/
