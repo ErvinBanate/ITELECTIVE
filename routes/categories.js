@@ -15,7 +15,6 @@ router.use(bodyParser.urlencoded({extended: true}));
 router.post('/productlist/category', (req, res) => {
     const index = req.body.index;
 
-    console.log(category[index]);
     res.send(category[index]);
 })
 

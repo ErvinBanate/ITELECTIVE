@@ -1,546 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>E Store - eCommerce HTML Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="eCommerce HTML Template Free Download" name="keywords">
-        <meta content="eCommerce HTML Template Free Download" name="description">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>E Store - eCommerce HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="eCommerce HTML Template Free Download" name="keywords">
+    <meta content="eCommerce HTML Template Free Download" name="description">
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="http://Localhost:8080/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="http://Localhost:8080/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://Localhost:8080/style.css">
 
-        <!-- Style -->
-        <link rel="stylesheet" href="http://Localhost:8080/css/style.css">
-        <link rel="stylesheet" href="http://Localhost:8080/Homepage.css">
-        <link rel="stylesheet" href="http://Localhost:8080/errorPopUp.css">
-        <script src="http://Localhost:8080/js/jquery-3.3.1.min.js"></script>
-        <script src="http://Localhost:8080/js/popper.min.js"></script>
-        <script src="http://Localhost:8080/js/bootstrap.min.js"></script>
-        <script src="http://Localhost:8080/js/main.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://Localhost:8080/css/bootstrap.min.css">
 
-        <!-- Favicon -->
-        <link href="http://Localhost:8080/img/favicon.ico" rel="icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="http://Localhost:8080/css/style.css">
+    <link rel="stylesheet" href="http://Localhost:8080/Homepage.css">
+    <link rel="stylesheet" href="http://Localhost:8080/errorPopUp.css">
+    <script src="http://Localhost:8080/js/jquery-3.3.1.min.js"></script>
+    <script src="http://Localhost:8080/js/popper.min.js"></script>
+    <script src="http://Localhost:8080/js/bootstrap.min.js"></script>
+    <script src="http://Localhost:8080/js/main.js"></script>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="http://Localhost:8080/img/favicon.ico" rel="icon">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="http://Localhost:8080/slick/slick.css" rel="stylesheet">
-        <link href="http://Localhost:8080/slick/slick-theme.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
+        rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="http://Localhost:8080/css/style.css" rel="stylesheet">
-    </head>
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="http://Localhost:8080/slick/slick.css" rel="stylesheet">
+    <link href="http://Localhost:8080/slick/slick-theme.css" rel="stylesheet">
 
-    <body>
-        <div class="modal fade" id="modalBoxSignIn" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content rounded-0">
-                    <div class="modal-body py-0">
-                        <div class="d-flex main-content">
-                            <div class="bg-image promo-img mr-3" id="picture"
-                                style="background-image: url('http://Localhost:8080/background4.jpg');">
+    <!-- Template Stylesheet -->
+    <link href="http://Localhost:8080/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal fade" id="modalBoxSignIn" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-body py-0">
+                    <div class="d-flex main-content">
+                        <div class="bg-image promo-img mr-3" id="picture"
+                            style="background-image: url('http://Localhost:8080/background4.jpg');">
+                        </div>
+                        <div class="content-text p-4">
+                            <h3 id="title">Sign-In</h3>
+                            <p>We sell different kinds of plants that could be used for souvenirs, giveaways, etc.</p>
+
+                            <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" id="usernameSign" class="form-control"
+                                    placeholder="Enter Username..." autocomplete="off">
                             </div>
-                            <div class="content-text p-4">
-                                <h3 id="title">Sign-In</h3>
-                                <p>We sell different kinds of plants that could be used for souvenirs, giveaways, etc.</p>
-    
-                                <div class="form-group">
-                                    <label for="username">username</label>
-                                    <input type="text" id="usernameSign" class="form-control"
-                                        placeholder="Enter Username..." autocomplete="off">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="passwordSign"
+                                    placeholder="Enter Password..." autocomplete="off">
+                                <input type="checkbox" id="showPassword" onclick="viewPasswordSign()">
+                                <label for="showPassword">Show Password</label>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block Close"
+                                        data-dismiss="modal">Close</button>
                                 </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="passwordSign"
-                                        placeholder="Enter Password..." autocomplete="off">
-                                    <input type="checkbox" id="showPassword" onclick="viewPasswordSign()">
-                                    <label for="showPassword">Show Password</label>
+                                <div class="col-6">
+                                    <button type="button" id="sign"
+                                        class="btn btn-info btn-lg btn-block">Sign-In</button>
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-secondary btn-lg btn-block Close"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button type="button" id="sign"
-                                            class="btn btn-info btn-lg btn-block">Sign-In</button>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <p class="custom-note"><small>By signing up you will agree to our <a href="#">Privacy
-                                                Policy</a></small></p>
-                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p class="custom-note"><small>By signing up you will agree to our <a href="#">Privacy
+                                            Policy</a></small></p>
                             </div>
                         </div>
-    
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalBoxLogIn" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content rounded-0">
-                    <div class="modal-body py-0">
-                        <div class="d-flex main-content">
-                            <div class="bg-image promo-img mr-3" id="picture"
-                                style="background-image: url('http://Localhost:8080/background4.jpg');">
-                            </div>
-                            <div class="content-text p-4">
-                                <h3 id="title">Log-In</h3>
-                                <p>We sell different kinds of plants that could be used for souvenirs, giveaways, etc.</p>
-    
-                                <div class="form-group">
-                                    <label for="username">username</label>
-                                    <input type="text" id="usernameLog" class="form-control" placeholder="Enter Username..."
-                                        autocomplete="off">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="passwordLog"
-                                        placeholder="Enter Password..." autocomplete="off">
-                                    <input type="checkbox" id="showPassword" onclick="viewPasswordLog()">
-                                    <label for="showPassword">Show Password</label>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-secondary btn-lg btn-block Close"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button type="button" id="log" class="btn btn-info btn-lg btn-block">Log-In</button>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <p><a href="#">Forgot Password?</a></p>
-                                </div>
-                            </div>
+    </div>
+    <div class="modal fade" id="modalBoxLogIn" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-body py-0">
+                    <div class="d-flex main-content">
+                        <div class="bg-image promo-img mr-3" id="picture"
+                            style="background-image: url('http://Localhost:8080/background4.jpg');">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="errorGroup">
-            <span class="helper"></span>
-            <div>
-                <div class="popupCloseButton">&times;</div>
-                <p id="errorMessage"></p>
-            </div>
-        </div>
-     
-        <!-- Nav Bar Start -->
-        <div class="nav">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <div class="content-text p-4">
+                            <h3 id="title">Log-In</h3>
+                            <p>We sell different kinds of plants that could be used for souvenirs, giveaways, etc.</p>
 
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="http://Localhost:8080/" class="nav-item nav-link">Home</a>
-                            <a href="http://Localhost:8080/productlist/page2" class="nav-item nav-link active">Products</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+                            <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" id="usernameLog" class="form-control" placeholder="Enter Username..."
+                                    autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="passwordLog"
+                                    placeholder="Enter Password..." autocomplete="off">
+                                <input type="checkbox" id="showPassword" onclick="viewPasswordLog()">
+                                <label for="showPassword">Show Password</label>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block Close"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" id="log" class="btn btn-info btn-lg btn-block">Log-In</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="navbar-nav ml-auto">
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
-                                <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#modalBoxLogIn">Login</a>
-                                    <a href="#" class="dropdown-item" data-toggle="modal" data-target="#modalBoxSignIn">Register</a>
-                                </div>
+                            <div class="form-group">
+                                <p><a href="#">Forgot Password?</a></p>
                             </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Nav Bar End -->      
-        
-        <!-- Bottom Bar Start -->
-        <div class="bottom-bar">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-3">
-                        <div class="logo">
-                            <a href="http://Localhost:8080/">
-                                <img src="http://Localhost:8080/Greener Green.png" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="user">
-                            <a href="http://Localhost:8080/cart" class="btn cart">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>(0)</span>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Bottom Bar End -->  
-        
-        <!-- Breadcrumb Start -->
-        <div class="breadcrumb-wrap">
-            <div class="container-fluid">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="http://Localhost:8080/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="http://Localhost:8080/productlist/page2">Products</a></li>
-                    <li class="breadcrumb-item active">Product List</li>
-                </ul>
-            </div>
+    </div>
+    <div id="errorGroup">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton">&times;</div>
+            <p id="errorMessage"></p>
         </div>
-        <!-- Breadcrumb End -->
-        
-        <!-- Product List Start -->
-        <div class="product-view">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-md-12">
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Dark Malaika</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Dark Malaika - 170pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 170</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Dracena Lemon Surprise</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Dracaena Lemon Surprise - 60pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 60</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Dracena Warneckii</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Dracaena Warneckii 60 - pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 60</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">FernWood Punk</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Fernwood Punk - 33pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 33</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Pachira Cut</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Pachira Cut - 33pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 33</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Philodendron Oxycardium</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Philodendron Oxycardium - 33pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 33</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Sansevieria Bacularis</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Sansevieria Bacularis - 28pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 28</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Sansevieria Fernwood</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Sansevieria Fernwood - 28pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 28</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Sansevieria Hanii Eye</a>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="http://Localhost:8080/Product-listing-images/Plants/Sansevieria Hanii Eye - 30pesos.PNG" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3>&#8369 30</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
+    </div>
+
+    <!-- Nav Bar Start -->
+    <div class="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="http://Localhost:8080/" class="nav-item nav-link">Home</a>
+                        <a href="http://Localhost:8080/productlist/page2" class="nav-item nav-link active">Products</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                            <div class="dropdown-menu">
+                                <a href="contact.html" class="dropdown-item">Contact Us</a>
                             </div>
                         </div>
-                        
-                        <!-- Pagination Start -->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item" data-toggle="modal"
+                                    data-target="#modalBoxLogIn">Login</a>
+                                <a href="#" class="dropdown-item" data-toggle="modal"
+                                    data-target="#modalBoxSignIn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="http://Localhost:8080/">
+                            <img src="http://Localhost:8080/Greener Green.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="user">
+                        <a href="http://Localhost:8080/cart" class="btn cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>(0)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Bar End -->
+
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb-wrap">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://Localhost:8080/">Home</a></li>
+                <li class="breadcrumb-item"><a href="http://Localhost:8080/productlist/page2">Products</a></li>
+                <li class="breadcrumb-item active">Product List</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Product List Start -->
+    <div class="product-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
                         <div class="col-md-12">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item">
-                                        <a class="page-link" href="http://Localhost:8080/productlist/page1" >Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="http://Localhost:8080/productlist/page1">1</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="http://Localhost:8080/productlist/page3">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="http://Localhost:8080/productlist/page4">4</a></li>
-                                    <li class="page-item"><a class="page-link" href="http://Localhost:8080/productlist/page5">5</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="http://Localhost:8080/productlist/page3">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
                         </div>
-                        <!-- Pagination Start -->
-                    </div>           
-                    
-                    <!-- Side Bar Start -->
-                    <div class="col-lg-4 sidebar">
-                        <div class="sidebar-widget category">
-                            <h2 class="title">Category</h2>
-                            <nav class="navbar bg-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-circle"></i>Soil mix & amendments</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-circle"></i>Fertilizers</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-circle"></i>Pots</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-circle"></i>Stones & Pebbles</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-circle"></i>Plants & Cactus</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"><i class="fa fa-circle"></i>Garden supplies</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- Side Bar End -->
-                </div>
-            </div>
-        </div>
-        <!-- Product List End -->  
-        
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>Get in Touch</h2>
-                            <div class="contact-info">
-                                <p><i class="fa fa-map-marker"></i>273 Manuel L Quezon St. Lower Bicutan Taguig city Parok IV</p>
-                                <p><i class="fa fa-envelope"> greenergreen2017@gmail.com</i></p>
-                                <p><i class="fa fa-phone"></i>0977-755-8395(Globe) / 0938-770-8846(Smart)</p>
+
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Dark Malaika</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Dark Malaika - 170pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 170</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>Follow Us</h2>
-                            <div class="contact-info">
-                                <div class="social">
-                                    <a href="https://www.facebook.com/greenergreen" title="Greener Green Page"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.facebook.com/greener.green.79" title="Greener Green Official Account"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.facebook.com/sabelgarden" title="Sabel's Garden"><i class="fab fa-facebook-f"></i></a>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Dracena Lemon Surprise</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Dracaena Lemon Surprise - 60pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 60</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Dracena Warneckii</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Dracaena Warneckii 60 - pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 60</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">FernWood Punk</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Fernwood Punk - 33pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 33</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Pachira Cut</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Pachira Cut - 33pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 33</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Philodendron Oxycardium</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Philodendron Oxycardium - 33pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 33</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Sansevieria Bacularis</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Sansevieria Bacularis - 28pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 28</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Sansevieria Fernwood</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Sansevieria Fernwood - 28pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 28</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-item">
+                                <div class="product-title">
+                                    <a href="#">Sansevieria Hanii Eye</a>
+                                </div>
+                                <div class="product-image">
+                                    <a href="product-detail.html">
+                                        <img src="http://Localhost:8080/Product-listing-images/Plants/Sansevieria Hanii Eye - 30pesos.PNG"
+                                            alt="Product Image">
+                                    </a>
+                                    <div class="product-action">
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="#"><i class="fa fa-heart"></i></a>
+                                        <a href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h3>&#8369 30</h3>
+                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>Company Info</h2>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
+                    <!-- Pagination Start -->
+                    <div class="col-md-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="http://Localhost:8080/productlist/page1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link"
+                                        href="http://Localhost:8080/productlist/page1">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="http://Localhost:8080/productlist/page3">3</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="http://Localhost:8080/productlist/page4">4</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="http://Localhost:8080/productlist/page5">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="http://Localhost:8080/productlist/page3">Next</a>
+                                </li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
+                    <!-- Pagination Start -->
+                </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>Purchase Info</h2>
-                            <ul>
-                                <li><a href="#">Payment Policy</a></li>
-                                <li><a href="#">Shipping Policy</a></li>
-                                <li><a href="#">Return Policy</a></li>
+                <!-- Side Bar Start -->
+                <div class="col-lg-4 sidebar">
+                    <div class="sidebar-widget category">
+                        <h2 class="title">Category</h2>
+                        <nav class="navbar bg-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://Localhost:8080/productlist/page1"><i
+                                            class="fa fa-circle category"></i>All Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="0"><i
+                                            class="fa fa-circle category"></i>Fertilizers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="1"><i class="fa fa-circle category"></i>Garden
+                                        supplies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="2"><i class="fa fa-circle category"></i>Plants &
+                                        Cactus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="3"><i class="fa fa-circle category"></i>Pots</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="4"><i class="fa fa-circle category"></i>Soil mix &
+                                        amendments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="5"><i class="fa fa-circle category"></i>Stones &
+                                        Pebbles</a>
+                                </li>
                             </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Side Bar End -->
+            </div>
+        </div>
+    </div>
+    <!-- Product List End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>273 Manuel L Quezon St. Lower Bicutan Taguig city Parok
+                                IV</p>
+                            <p><i class="fa fa-envelope"> greenergreen2017@gmail.com</i></p>
+                            <p><i class="fa fa-phone"></i>0977-755-8395(Globe) / 0938-770-8846(Smart)</p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Follow Us</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href="https://www.facebook.com/greenergreen" title="Greener Green Page"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/greener.green.79"
+                                    title="Greener Green Official Account"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/sabelgarden" title="Sabel's Garden"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Company Info</h2>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Purchase Info</h2>
+                        <ul>
+                            <li><a href="#">Payment Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Footer Bottom Start -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
             </div>
         </div>
-        <!-- Footer Bottom End -->       
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="http://Localhost:8080/easing/easing.min.js"></script>
-        <script src="http://Localhost:8080/slick/slick.min.js"></script>
-        
-        <!-- Template Javascript -->
-        <script src="http://Localhost:8080/main1.js"></script>
-    </body>
+    </div>
+    <!-- Footer Bottom End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="http://Localhost:8080/easing/easing.min.js"></script>
+    <script src="http://Localhost:8080/slick/slick.min.js"></script>
+    <script src="http://Localhost:8080/productlist.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="http://Localhost:8080/main1.js"></script>
+</body>
+
 </html>

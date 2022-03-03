@@ -1,7 +1,6 @@
 $(document).ready(() => {
     $(document).on('click', '.category', (el) => {
         const id = el.target.id;
-        console.log(el);
 
         $.ajax({
             url: 'http://Localhost:8080/productlist/category',
@@ -9,7 +8,6 @@ $(document).ready(() => {
             data: {index: id},
             dataType: 'html'
         }).done((data) => {
-            console.log(data);
             if (data == undefined) {
                 $('#errorGroup').show();
                 $('#errorMessage').text("Error!!!!");
