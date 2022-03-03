@@ -22,9 +22,107 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
     <body>
-        
+
+        <div class="modal fade" id="modalBoxSignIn" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-body py-0">
+                    <div class="d-flex main-content">
+                        <div class="bg-image promo-img mr-3" id="picture"
+                            style="background-image: url('http://Localhost:8080/background4.jpg');">
+                        </div>
+                        <div class="content-text p-4">
+                            <h3 id="title">Sign-In</h3>
+                            <p>We sell different kinds of plants that could be used for souvenirs, giveaways, etc.</p>
+
+                            <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" id="usernameSign" class="form-control"
+                                    placeholder="Enter Username..." autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="passwordSign"
+                                    placeholder="Enter Password..." autocomplete="off">
+                                <input type="checkbox" id="showPassword" onclick="viewPasswordSign()">
+                                <label for="showPassword">Show Password</label>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block Close"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" id="sign"
+                                        class="btn btn-info btn-lg btn-block">Sign-In</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p class="custom-note"><small>By signing up you will agree to our <a href="#">Privacy
+                                            Policy</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalBoxLogIn" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0">
+                <div class="modal-body py-0">
+                    <div class="d-flex main-content">
+                        <div class="bg-image promo-img mr-3" id="picture"
+                            style="background-image: url('http://Localhost:8080/background4.jpg');">
+                        </div>
+                        <div class="content-text p-4">
+                            <h3 id="title">Log-In</h3>
+                            <p>We sell different kinds of plants that could be used for souvenirs, giveaways, etc.</p>
+
+                            <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" id="usernameLog" class="form-control" placeholder="Enter Username..."
+                                    autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="passwordLog"
+                                    placeholder="Enter Password..." autocomplete="off">
+                                <input type="checkbox" id="showPassword" onclick="viewPasswordLog()">
+                                <label for="showPassword">Show Password</label>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block Close"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" id="log" class="btn btn-info btn-lg btn-block">Log-In</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p><a href="#">Forgot Password?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="errorGroup">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton">&times;</div>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+
+
         <!-- Nav Bar Start -->
         <div class="nav">
             <div class="container-fluid">
@@ -36,17 +134,12 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="product-list.html" class="nav-item nav-link">Products</a>
-                            <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
-                            <a href="cart.html" class="nav-item nav-link active">Cart</a>
-                            <a href="checkout.html" class="nav-item nav-link">Checkout</a>
-                            <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                            <a href="http://Localhost:8080/" class="nav-item nav-link active">Home</a>
+                            <a href="http://Localhost:8080/productlist/page1" class="nav-item nav-link">Products</a>
+                            <a href="http://Localhost:8080/cart" class="nav-item nav-link active">Cart</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
                                 <div class="dropdown-menu">
-                                    <a href="wishlist.html" class="dropdown-item">Wishlist</a>
-                                    <a href="login.html" class="dropdown-item">Login & Register</a>
                                     <a href="contact.html" class="dropdown-item">Contact Us</a>
                                 </div>
                             </div>
@@ -72,18 +165,14 @@
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="img/Greenergreenlogo.png" alt="Logo">
+                            <a href="http://Localhost:8080/">
+                                <img src="http://Localhost:8080/Greener Green.png" alt="Logo">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
-                                <i class="fa fa-heart"></i>
-                                <span>(0)</span>
-                            </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="http://Localhost:8080/cart" class="btn cart">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>
@@ -127,11 +216,11 @@
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="img/product-1.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <a href="#"><img src="http://Localhost:8080/Product-listing-images/Fertilizers/Osmocote Fertilizer 7400php.jpg" alt="Image"></a>
+                                                    <p>Osmocote Fertilizer</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 7,400</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -139,17 +228,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 7,400</td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="img/product-2.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <a href="#"><img src="http://Localhost:8080/Product-listing-images/Plants/Dracaena Lemon Surprise - 60pesos.PNG" alt="Image"></a>
+                                                    <p>Dracena Lemon Surprise</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 60</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -157,17 +246,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 60</td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="img/product-3.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <a href="#"><img src="http://Localhost:8080/Product-listing-images/Rocks_Pebbles/Red Lava Rocks - 25pesos.PNG" alt="Image"></a>
+                                                    <p>Red Lava Rocks</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 25</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -175,17 +264,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 25</td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="img/product-4.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <a href="#"><img src="http://Localhost:8080/Product-listing-images/Soils/Coco Block 1I2cu.ft. - 180pesos.PNG" alt="Image"></a>
+                                                    <p>Coco Block 1I2cu.ft.</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 180</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -193,17 +282,17 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 180</td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="img/product-5.jpg" alt="Image"></a>
-                                                    <p>Product Name</p>
+                                                    <a href="#"><img src="http://Localhost:8080/Product-listing-images/Soils/Coco Peat Bricks - 65pesos.PNG" alt="Image"></a>
+                                                    <p>Coco Peat Bricks</p>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 65</td>
                                             <td>
                                                 <div class="qty">
                                                     <button class="btn-minus"><i class="fa fa-minus"></i></button>
@@ -211,7 +300,7 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td>&#8369 65</td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                     </tbody>

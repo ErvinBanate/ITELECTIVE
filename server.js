@@ -25,8 +25,9 @@ app.get('/productlist/page4', htmlLoader);
 
 app.get('/productlist/page5', htmlLoader);
 
-app.get('/Customer', htmlLoader);
+app.get('/cart', htmlLoader);
 
+app.get('/Customer', htmlLoader);
 
 app.get('/Customer/:username', htmlLoader);
 

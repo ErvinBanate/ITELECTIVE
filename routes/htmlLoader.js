@@ -30,4 +30,8 @@ router.get('/Customer/:username', (req, res) => {
     res.sendFile('Customer.html', {root: path.join('./HTML')});
 });
 
+router.get('/cart', (req, res) => {
+    res.sendFile('cart.html', {root: path.join('./HTML')});
+});
+
 module.exports = router;
