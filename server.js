@@ -1,6 +1,7 @@
 const express = require('express');
 const accountRouter = require('./routes/accountRouter');
 const htmlLoader = require('./routes/htmlLoader');
+const categories = require('./routes/categories');
 const app = express();
 
 // Front-end Designs and Functions
@@ -35,5 +36,7 @@ app.get('/Customer/:username', htmlLoader);
 app.post('/Sign-In', accountRouter); 
 
 app.post('/Log-In', accountRouter);
+
+app.post('/productlist/category', categories);
 
 app.listen(8080, () => console.log("You are Now Connected in 8080"));
